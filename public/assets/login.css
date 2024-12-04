@@ -5,7 +5,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Fonte modernizada */
 }
 
 body {
@@ -13,80 +13,84 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f5; /* Fundo mais claro */
+  background-color: #2e2e2e; /* Fundo escuro */
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  gap: 2rem; /* Espaçamento entre os blocos */
 }
 
 .info {
-  width: 45%;
-  background-color: #2f2f2f; /* Cinza escuro */
+  width: 100%;
+  max-width: 500px; /* Limita a largura máxima */
+  background-color: #1f1f1f; /* Cinza muito escuro */
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  border-radius: 10px 0 0 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  border-radius: 15px 0 0 15px; /* Bordas arredondadas mais suaves */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .info h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
   text-align: center;
-  color: #00b5e2; /* Azul suave, lembra o tom de saúde */
+  color: #007bb5; /* Azul escuro para destaque */
 }
 
 .info p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.7;
   text-align: center;
-  color: #e1e1e1;
+  color: #b0b0b0; /* Cinza claro */
 }
 
 .login-form {
-  width: 45%;
+  width: 100%;
+  max-width: 500px; /* Limita a largura máxima */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background-color: white;
-  border-radius: 0 10px 10px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  background-color: #333333; /* Fundo escuro */
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .login-form h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #e1e1e1; /* Cor clara para o título */
 }
 
 .login-form form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 .login-form form label {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f2f2f2; /* Cor clara para os rótulos */
 }
 
 .login-form form input {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  color: #333;
-  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #444; /* Borda mais escura */
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #f2f2f2;
+  background-color: #555; /* Fundo escuro para os inputs */
   transition: border-color 0.3s ease;
 }
 
 .login-form form input:focus {
-  border-color: #00b5e2; /* Azul suave ao focar */
+  border-color: #007bb5; /* Azul escuro ao focar */
   outline: none;
 }
 
@@ -96,9 +100,12 @@ body {
 }
 
 .login-form form div:last-of-type button {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
+  padding: 1.2rem 2.5rem; /* Aumentei o padding para um visual mais proporcional */
+  font-size: 1.1rem;
+  text-align: center; /* Alinha o texto no centro */
+  width: 100%; /* Torna o botão mais largo, ocupando toda a largura disponível */
+  max-width: 250px; /* Define um limite de largura para o botão */
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -106,20 +113,20 @@ body {
 
 .login-form form div:last-of-type button.unelevated {
   background-color: transparent;
-  border: 1px solid #00b5e2;
-  color: #00b5e2;
+  border: 1px solid #007bb5;
+  color: #007bb5;
 }
 
 .login-form form div:last-of-type button.unelevated:hover {
-  background-color: #00b5e2;
+  background-color: #007bb5;
   color: white;
 }
 
 .login-form form div:last-of-type button#btlogin {
-  background-color: #00b5e2;
+  background-color: #007bb5; /* Azul escuro */
   color: white;
 }
 
 .login-form form div:last-of-type button#btlogin:hover {
-  background-color: #008C8E; /* Azul escuro para o hover */
+  background-color: #005f6b; /* Azul ainda mais escuro no hover */
 }
